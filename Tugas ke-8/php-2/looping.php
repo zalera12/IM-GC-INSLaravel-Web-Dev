@@ -13,15 +13,27 @@
 echo "<h3>Soal No 1 Looping I Love PHP</h3>";
 // Soal No 1
 // Looping I Love PHP
-echo "LOOPING PERTAMA<br>";
-for ($i = 2; $i <= 20; $i += 2) {
-    echo "$i - I Love PHP<br>";
+$i = 0 ;
+$j = 0 ;
+echo "Looping ke-1 : <br>" ;
+while($i <= 20){
+    if($j == 20){
+        if($i == 20){
+            echo "Looping ke-2 : <br>";
+        }
+        echo "$i"." - "." I Love PHP<br>" ;
+        $i = $i - 2 ;
+        if($i < 2){
+            break ;
+        }
+        
+    }else{
+        $i = $i + 2 ;
+        echo "$i"." - "." I Love PHP<br>" ;
+        $j = $j + 2;
+    }
 }
 
-echo "<br>LOOPING KEDUA<br>";
-for ($i = 20; $i >= 2; $i -= 2) {
-    echo "$i - I Love PHP<br>";
-}
 
 echo "<h3>Soal No 2 Looping Array Modulo</h3>";
 // Soal No 2
